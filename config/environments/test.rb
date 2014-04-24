@@ -32,4 +32,13 @@ Crambear::Application.configure do
   config.active_support.deprecation = :stderr
 
   config.ember.variant = :development
+
+  # $DEVCONFIG = YAML.load(File.read("#{Rails.root}/devconfig.yml"))
+
+  # ENV['DEV_DATABASE_DATABASE'] = $DEVCONFIG["database"]["database"]
+  # ENV['DEV_DATABASE_USERNAME'] = $DEVCONFIG["database"]["username"]
+  # ENV['DEV_DATABASE_PASSWORD'] = $DEVCONFIG["database"]["password"]
+  # ENV['DEV_DATABASE_HOST'] = $DEVCONFIG["database"]["host"]
+  # ENV['DEV_DATABASE_PORT'] = $DEVCONFIG["database"]["port"]
+
 end

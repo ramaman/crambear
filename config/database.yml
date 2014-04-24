@@ -1,19 +1,21 @@
 development:
   adapter: postgresql
+  encoding: unicode
   database: crambear_development
-  host: localhost
-
-test:
-  adapter: postgresql
-  database: crambear_test
-  host: localhost
-
-
-#dummy to get assets:precompile to work
-#see http://devcenter.heroku.com/articles/rails31_heroku_cedar
-production:
-  adapter: postgresql
-  database: crambear_production
+  pool: 5
   username: postgres
-  password: pwwwwww12
+  password: 
+  host: 
+  port: 5432
+
+test: &test
+  adapter: postgresql
+  encoding: unicode
+  database: crambear_test
+  pool: 5
+  username: postgres
+  password: 
+  host: 
+  port: 5432
+
 
